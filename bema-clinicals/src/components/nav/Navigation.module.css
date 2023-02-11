@@ -3,7 +3,6 @@
   padding: 0;
   list-style-type: none;
   width: 106.4rem;
-  background-color: orangered;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -89,7 +88,6 @@
   list-style-type: none;
   width: 106.4rem;
   height: 4.6rem;
-  background-color: blueviolet;
   display: flex;
   flex-direction: row;
   align-items: center;

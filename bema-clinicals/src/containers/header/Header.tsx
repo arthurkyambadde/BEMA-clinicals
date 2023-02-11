@@ -4,7 +4,7 @@ import { Logo, Navigation } from "@/components";
 export default function Header(): JSX.Element {
   return (
     <header>
-      <nav>
+      <nav className={classes.navigation}>
         <Logo />
         <Navigation />
       </nav>
