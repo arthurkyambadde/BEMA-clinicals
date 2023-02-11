@@ -1,0 +1,12 @@
+/*Logo component styles*/
+
+.logo-box {
+  width: 18.6rem;
+  height: 13rem;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
