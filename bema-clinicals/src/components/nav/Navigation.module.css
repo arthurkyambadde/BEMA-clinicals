@@ -57,3 +57,25 @@
   line-height: 2rem;
   color: var(--pure-black);
 }
+
+.navigation-primary--sub__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.dropdown-menu {
+  display: none;
+  margin: 0;
+  padding: 1rem 0.5rem;
+  list-style-type: none;
+  background: var(--light-white);
+  position: absolute;
+  top: 3rem;
+}
+
+.navigation-primary--sub__item:hover .dropdown-menu {
+  display: block;
+}

@@ -46,7 +46,25 @@ export default function Navigation(): JSX.Element {
 
         <ul className={classes["navigation-primary--sub"]}>
           <li className={classes["navigation-primary--sub__item"]}>
-            Work With Us
+            Work With Us{" "}
+            <svg
+              width="10"
+              height="5"
+              viewBox="0 0 10 5"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.59766 0C1.10547 0 0.859375 0.601562 1.21484 0.957031L4.71484 4.45703C4.93359 4.67578 5.28906 4.67578 5.50781 4.45703L9.00781 0.957031C9.36328 0.601562 9.11719 0 8.625 0H1.59766Z"
+                fill="black"
+              />
+            </svg>
+            <ul className={classes["dropdown-menu"]}>
+              <li>Our rates</li>
+              <li>Our charges</li>
+              <li>Our prices</li>
+              <li>Our terms</li>
+            </ul>
           </li>
           <li className={classes["navigation-primary--sub__item"]}>
             News and Events
