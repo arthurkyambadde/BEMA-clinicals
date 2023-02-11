@@ -1,5 +1,5 @@
 import classes from "./Header.module.css";
-import { Logo, Navigation } from "@/components";
+import { Logo, Navigation, Banner } from "@/components";
 
 export default function Header(): JSX.Element {
   return (
@@ -8,6 +8,7 @@ export default function Header(): JSX.Element {
         <Logo />
         <Navigation />
       </nav>
+      <Banner />
     </header>
   );
 }

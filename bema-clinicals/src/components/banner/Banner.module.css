@@ -1,0 +1,23 @@
+/*Banner styles*/
+
+.banner-wrapper {
+  width: 100%;
+  height: 7rem;
+  background: var(--light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner-paragraph {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--pure-white);
+}
+
+.banner-link {
+  text-decoration: underline;
+  color: var(--pure-white);
+}
