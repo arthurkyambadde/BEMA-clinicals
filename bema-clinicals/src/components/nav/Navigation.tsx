@@ -45,10 +45,16 @@ export default function Navigation(): JSX.Element {
         </li>
 
         <ul className={classes["navigation-primary--sub"]}>
-          <li className={classes["navigation-primary--sub__item"]}>item 1</li>
-          <li className={classes["navigation-primary--sub__item"]}>item 2</li>
-          <li className={classes["navigation-primary--sub__item"]}>item 3</li>
-          <li className={classes["navigation-primary--sub__item"]}>item 4</li>
+          <li className={classes["navigation-primary--sub__item"]}>
+            Work With Us
+          </li>
+          <li className={classes["navigation-primary--sub__item"]}>
+            News and Events
+          </li>
+          <li className={classes["navigation-primary--sub__item"]}>Blog</li>
+          <li className={classes["navigation-primary--sub__item"]}>
+            Contact Us
+          </li>
         </ul>
       </ul>
     </div>
