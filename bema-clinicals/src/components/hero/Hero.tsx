@@ -1,4 +1,5 @@
 import classes from "./Hero.module.css";
+import { Button } from "@/components";
 
 export default function Hero(): JSX.Element {
   return (
@@ -14,6 +15,7 @@ export default function Hero(): JSX.Element {
           ex, nesciunt{" "}
         </p>
       </div>
+      <Button>Contact Us</Button>
     </div>
   );
 }
