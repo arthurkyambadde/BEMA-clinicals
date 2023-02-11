@@ -75,6 +75,95 @@ export default function Navigation(): JSX.Element {
           </li>
         </ul>
       </ul>
+
+      <ul className={classes["navigation-secondary"]}>
+        <li className={classes["navigation-secondary__item"]}>
+          Our Experience
+        </li>
+        <li className={classes["navigation-secondary__item"]}>
+          BEMA clinical trials
+        </li>
+        <li className={classes["navigation-secondary__item"]}>
+          Services
+          <svg
+            width="10"
+            height="5"
+            viewBox="0 0 10 5"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.59766 0C1.10547 0 0.859375 0.601562 1.21484 0.957031L4.71484 4.45703C4.93359 4.67578 5.28906 4.67578 5.50781 4.45703L9.00781 0.957031C9.36328 0.601562 9.11719 0 8.625 0H1.59766Z"
+              fill="black"
+            />
+          </svg>
+          <ul className={classes["dropdown-menu"]}>
+            <li>Our rates</li>
+            <li>Our charges</li>
+            <li>Our prices</li>
+            <li>Our terms</li>
+          </ul>
+        </li>
+        <li className={classes["navigation-secondary__item"]}>
+          Focus On Sites
+        </li>
+        <li className={classes["navigation-secondary__item"]}>
+          Insights Hub
+          <svg
+            width="10"
+            height="5"
+            viewBox="0 0 10 5"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.59766 0C1.10547 0 0.859375 0.601562 1.21484 0.957031L4.71484 4.45703C4.93359 4.67578 5.28906 4.67578 5.50781 4.45703L9.00781 0.957031C9.36328 0.601562 9.11719 0 8.625 0H1.59766Z"
+              fill="black"
+            />
+          </svg>
+          <ul className={classes["dropdown-menu"]}>
+            <li>Our rates</li>
+            <li>Our charges</li>
+            <li>Our prices</li>
+            <li>Our terms</li>
+          </ul>
+        </li>
+        <li className={classes["navigation-secondary__item"]}>
+          About
+          <svg
+            width="10"
+            height="5"
+            viewBox="0 0 10 5"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.59766 0C1.10547 0 0.859375 0.601562 1.21484 0.957031L4.71484 4.45703C4.93359 4.67578 5.28906 4.67578 5.50781 4.45703L9.00781 0.957031C9.36328 0.601562 9.11719 0 8.625 0H1.59766Z"
+              fill="black"
+            />
+          </svg>
+          <ul className={classes["dropdown-menu"]}>
+            <li>Our rates</li>
+            <li>Our charges</li>
+            <li>Our prices</li>
+            <li>Our terms</li>
+          </ul>
+        </li>
+        <li className={classes["navigation-secondary__item"]}>
+          <svg
+            width="19"
+            height="18"
+            viewBox="0 0 19 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4844 11.5H12.6944L12.4144 11.23C13.3944 10.09 13.9844 8.61 13.9844 7C13.9844 3.41 11.0744 0.5 7.48438 0.5C3.89438 0.5 0.984375 3.41 0.984375 7C0.984375 10.59 3.89438 13.5 7.48438 13.5C9.09437 13.5 10.5744 12.91 11.7144 11.93L11.9844 12.21V13L16.9844 17.99L18.4744 16.5L13.4844 11.5ZM7.48438 11.5C4.99438 11.5 2.98438 9.49 2.98438 7C2.98438 4.51 4.99438 2.5 7.48438 2.5C9.97437 2.5 11.9844 4.51 11.9844 7C11.9844 9.49 9.97437 11.5 7.48438 11.5Z"
+              fill="#0A0A0A"
+            />
+          </svg>
+        </li>
+      </ul>
     </div>
   );
 }
