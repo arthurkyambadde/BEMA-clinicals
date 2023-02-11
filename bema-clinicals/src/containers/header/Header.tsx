@@ -1,5 +1,5 @@
 import classes from "./Header.module.css";
-import { Logo, Navigation, Banner } from "@/components";
+import { Logo, Navigation, Banner, Hero } from "@/components";
 
 export default function Header(): JSX.Element {
   return (
@@ -9,6 +9,7 @@ export default function Header(): JSX.Element {
         <Navigation />
       </nav>
       <Banner />
+      <Hero />
     </header>
   );
 }
