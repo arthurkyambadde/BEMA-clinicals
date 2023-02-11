@@ -17,13 +17,18 @@ export default function Navigation(): JSX.Element {
               fill="#33CCFF"
             />
           </svg>
-          <span className={classes["nav-span"]}>+256200901030</span>
+          <span
+            className={` ${classes["nav-span"]} ${classes["nav-span_phone"]} `}
+          >
+            +256200901030
+          </span>
         </li>
         <li className={classes["navigation-primary__item"]}>
           <svg
             width="15"
             height="11"
             viewBox="0 0 15 11"
+            className={classes["icon-email"]}
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -32,7 +37,11 @@ export default function Navigation(): JSX.Element {
               fill="#33CCFF"
             />
           </svg>
-          <span className={classes["nav-span"]}>bema@gmail.com</span>
+          <span
+            className={` ${classes["nav-span"]} ${classes["nav-span_email"]} `}
+          >
+            bema@gmail.com
+          </span>
         </li>
 
         <ul className={classes["navigation-primary--sub"]}>

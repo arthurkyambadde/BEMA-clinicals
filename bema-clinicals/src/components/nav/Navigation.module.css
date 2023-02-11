@@ -7,6 +7,32 @@
   flex-direction: row;
 }
 
+.navigation-primary__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.nav-span {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  color: var(--light-gray);
+}
+
+.nav-span_phone {
+  margin-left: 0.46rem;
+}
+
+.nav-span_email {
+  margin-left: 1.8rem;
+}
+
+.icon-email {
+  margin-left: 1.9rem;
+}
+
 .navigation-primary--sub {
   margin: 0;
   padding: 0;
