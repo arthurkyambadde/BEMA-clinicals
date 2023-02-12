@@ -69,17 +69,26 @@
 
 .dropdown-menu {
   display: none;
-  margin: 0;
-  padding: 1rem 0.5rem;
+}
+
+.dropdown-list {
   list-style-type: none;
-  background: var(--light-white);
-  position: absolute;
-  top: 3.4rem;
-  z-index: 5;
+}
+
+.dropdown-list .dropdown-list_item:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
 .navigation-primary--sub__item:hover .dropdown-menu {
   display: block;
+  width: 16rem;
+  height: 12rem;
+  padding: 1rem 0.5rem;
+  background: var(--light-white);
+  position: absolute;
+  top: 2rem;
+  left: -4.5rem;
+  z-index: 5;
 }
 
 .navigation-secondary {
@@ -111,4 +120,11 @@
 
 .navigation-secondary__item:hover .dropdown-menu {
   display: block;
+  margin: 0;
+  padding: 1rem 0.5rem;
+  list-style-type: none;
+  background: var(--light-white);
+  position: absolute;
+  top: 3.4rem;
+  z-index: 5;
 }
