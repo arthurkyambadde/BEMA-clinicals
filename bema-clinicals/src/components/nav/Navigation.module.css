@@ -142,3 +142,16 @@
 .navigation-secondary__item .dropdown-menu .dropdown-list {
   padding: 1rem 1.5rem;
 }
+
+@media (max-width: 56.25em) {
+  .navigation-primary {
+    width: 100%;
+  }
+
+  .navigation-primary--sub {
+    width: 50%;
+  }
+  .navigation-secondary {
+    width: 100%;
+  }
+}

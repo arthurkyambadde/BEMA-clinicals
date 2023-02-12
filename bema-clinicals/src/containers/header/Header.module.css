@@ -11,6 +11,7 @@
   /* 1200px */
 
   .navigation {
-    background-color: orange;
+    justify-content: flex-start;
+    gap: 2rem;
   }
 } ;

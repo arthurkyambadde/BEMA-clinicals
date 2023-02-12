@@ -17,3 +17,10 @@
     height: 7rem;
   }
 }
+
+@media (max-width: 56.25em) {
+  .logo-box {
+    width: 12rem;
+    height: 10rem;
+  }
+}
