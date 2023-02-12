@@ -44,6 +44,24 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%; /*1rem = 9px/16px = 56.25% */
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%; /*1rem = 8px/16px = 50% */
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%; /* 1rem = 12px/16px = 75% */
+  }
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;

@@ -10,3 +10,10 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 75em) {
+  .logo-box {
+    width: 9.3rem;
+    height: 7rem;
+  }
+}

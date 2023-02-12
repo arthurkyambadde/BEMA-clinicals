@@ -6,3 +6,11 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+
+@media (max-width: 75em) {
+  /* 1200px */
+
+  .navigation {
+    background-color: orange;
+  }
+} ;
