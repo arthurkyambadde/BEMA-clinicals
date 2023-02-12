@@ -99,12 +99,14 @@ export default function Navigation(): JSX.Element {
               fill="black"
             />
           </svg>
-          <ul className={classes["dropdown-menu"]}>
-            <li>Our rates</li>
-            <li>Our charges</li>
-            <li>Our prices</li>
-            <li>Our terms</li>
-          </ul>
+          <div className={classes["dropdown-menu"]}>
+            <ul className={classes["dropdown-list"]}>
+              <li className={classes["dropdown-list_item"]}>Our rates</li>
+              <li className={classes["dropdown-list_item"]}>Our charges</li>
+              <li className={classes["dropdown-list_item"]}>Our prices</li>
+              <li className={classes["dropdown-list_item"]}>Our terms</li>
+            </ul>
+          </div>
         </li>
         <li className={classes["navigation-secondary__item"]}>
           Focus On Sites
@@ -123,12 +125,14 @@ export default function Navigation(): JSX.Element {
               fill="black"
             />
           </svg>
-          <ul className={classes["dropdown-menu"]}>
-            <li>Our rates</li>
-            <li>Our charges</li>
-            <li>Our prices</li>
-            <li>Our terms</li>
-          </ul>
+          <div className={classes["dropdown-menu"]}>
+            <ul className={classes["dropdown-list"]}>
+              <li className={classes["dropdown-list_item"]}>Our rates</li>
+              <li className={classes["dropdown-list_item"]}>Our charges</li>
+              <li className={classes["dropdown-list_item"]}>Our prices</li>
+              <li className={classes["dropdown-list_item"]}>Our terms</li>
+            </ul>
+          </div>
         </li>
         <li className={classes["navigation-secondary__item"]}>
           About
@@ -144,12 +148,14 @@ export default function Navigation(): JSX.Element {
               fill="black"
             />
           </svg>
-          <ul className={classes["dropdown-menu"]}>
-            <li>Our rates</li>
-            <li>Our charges</li>
-            <li>Our prices</li>
-            <li>Our terms</li>
-          </ul>
+          <div className={classes["dropdown-menu"]}>
+            <ul className={classes["dropdown-list"]}>
+              <li className={classes["dropdown-list_item"]}>Our rates</li>
+              <li className={classes["dropdown-list_item"]}>Our charges</li>
+              <li className={classes["dropdown-list_item"]}>Our prices</li>
+              <li className={classes["dropdown-list_item"]}>Our terms</li>
+            </ul>
+          </div>
         </li>
         <li className={classes["navigation-secondary__item"]}>
           <svg
