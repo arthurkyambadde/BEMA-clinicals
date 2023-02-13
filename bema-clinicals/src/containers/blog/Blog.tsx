@@ -1,5 +1,5 @@
 import classes from "./Blog.module.css";
-import { Card, Logo } from "@/components";
+import { Button, Card, Logo } from "@/components";
 
 export default function Blog(): JSX.Element {
   return (
@@ -16,7 +16,9 @@ export default function Blog(): JSX.Element {
       </div>
 
       <div className={classes["blog__info"]}>
-        <Logo />
+        <div className={classes["blog__logo-box"]}>
+          <Logo />
+        </div>
 
         <div className={classes["blog__text-box"]}>
           <h2 className={classes["blog__title"]}>PROVEN SOLUTIONS</h2>
@@ -31,6 +33,10 @@ export default function Blog(): JSX.Element {
             quisquam eos ex, nesciunt temporibus dolor, fugit dolorum in ratione
             veniam?
           </p>
+
+          <div className={classes["blog__btn-box"]}>
+            <Button>Our history</Button>
+          </div>
 
           <div className={classes["blog__icon-set"]}>
             <div className={classes["blog__icon-wrapper"]}>

@@ -15,7 +15,9 @@ export default function Hero(): JSX.Element {
           ex, nesciunt{" "}
         </p>
       </div>
-      <Button>Contact Us</Button>
+      <div className={classes["hero__btn-wrapper"]}>
+        <Button>Contact Us</Button>
+      </div>
     </div>
   );
 }

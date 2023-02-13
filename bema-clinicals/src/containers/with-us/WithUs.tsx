@@ -17,8 +17,9 @@ export default function WithUs(): JSX.Element {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cum
             incidunt fugiat nemo veritatis.
           </p>
-
-          <Button>Our mission</Button>
+          <div className={classes["btn-wrapper"]}>
+            <Button>Our mission</Button>
+          </div>
         </div>
       </div>
 

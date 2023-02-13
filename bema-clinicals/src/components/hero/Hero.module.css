@@ -37,6 +37,10 @@
   color: var(--pure-white);
 }
 
+.hero__btn-wrapper {
+  margin: 3.2rem 4.9rem;
+}
+
 @media (max-width: 37.5em) {
   .hero__text-box {
     width: 100%;

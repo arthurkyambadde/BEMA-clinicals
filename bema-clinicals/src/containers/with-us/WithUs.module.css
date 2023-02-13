@@ -87,6 +87,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 4rem;
 }
 
 .withUs_info__count--num {
@@ -110,6 +111,10 @@
   display: flex;
   justify-content: center;
   margin-top: 7.2rem;
+}
+
+.btn-wrapper {
+  margin-top: 6rem;
 }
 
 @media (max-width: 37.5em) {
