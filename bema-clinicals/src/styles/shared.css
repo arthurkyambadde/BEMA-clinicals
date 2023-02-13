@@ -108,6 +108,22 @@ body {
   color: var(--semi-light-blue);
 }
 
+.header-text {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: var(--pure-black);
+  margin-top: 2.6rem;
+}
+
+.upper-line {
+  display: block;
+  width: 10rem;
+  height: 0.9rem;
+  background-color: var(--dark-orange);
+  margin: 0 auto 3rem;
+}
+
 @media (max-width: 37.5em) {
   .heading-secondary {
     font-size: 2.2rem;
