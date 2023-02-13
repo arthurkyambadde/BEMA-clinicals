@@ -51,6 +51,10 @@
   background-color: rgba(150, 0, 77, 0.7);
 }
 
+.blog__card {
+  background-color: rgba(74, 34, 86, 0.7);
+}
+
 @media (max-width: 37.5em) {
   .card {
     width: 100%;
