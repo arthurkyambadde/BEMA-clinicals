@@ -22,14 +22,14 @@ export default function WithUs(): JSX.Element {
         </div>
       </div>
 
-      <div className="withUs_info">
+      <div className={classes["withUs_info"]}>
         <Logo />
 
-        <div className="withUs_info__content">
-          <h3 className="withUs_info__heading">
+        <div className={classes["withUs_info__content"]}>
+          <h3 className={classes["withUs_info__heading"]}>
             What does it mean to be inside Uganda?
           </h3>
-          <p className="withUs_info__text">
+          <p className={classes["withUs_info__text"]}>
             {" "}
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
             ullam quaerat, fugiat in ratione deleniti! Tempora doloremque
@@ -38,22 +38,24 @@ export default function WithUs(): JSX.Element {
             adipisicing elit. Veniam ullam quaerat, fugiat in ratione deleniti!
             Tempora doloremque quisquam eos ex, nesciunt temporibus dolor, fugit
             dolorum in ratione veniam? Culpa, officia.{" "}
-            <span className="withUs_info__text--span">
+            <span className={classes["withUs_info__text--span"]}>
               We are your partner for studies in sub-Saharan Africa.
             </span>
           </p>
 
-          <div className="withUs_info__count-box">
-            <p className="withUs_info__count">
-              <span className="withUs_info__count--num">349</span>
-              <span className="withUs_info__count--text">
+          <div className={classes["withUs_info__count-box"]}>
+            <p className={classes["withUs_info__count"]}>
+              <span className={classes["withUs_info__count--num"]}>349</span>
+              <span className={classes["withUs_info__count--text"]}>
                 Local Team Members
               </span>
             </p>
 
-            <p className="withUs_info__count">
-              <span className="withUs_info__count--num">388</span>
-              <span className="withUs_info__count--text">Studies</span>
+            <p className={classes["withUs_info__count"]}>
+              <span className={classes["withUs_info__count--num"]}>388</span>
+              <span className={classes["withUs_info__count--text"]}>
+                Studies
+              </span>
             </p>
           </div>
 
