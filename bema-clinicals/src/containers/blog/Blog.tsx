@@ -15,52 +15,52 @@ export default function Blog(): JSX.Element {
         />
       </div>
 
-      <div className="blog__info">
+      <div className={classes["blog__info"]}>
         <Logo />
 
-        <div className="blog__text-box">
-          <h2 className="blog__title">PROVEN SOLUTIONS</h2>
-          <h3 className="blog__sub-title">
+        <div className={classes["blog__text-box"]}>
+          <h2 className={classes["blog__title"]}>PROVEN SOLUTIONS</h2>
+          <h3 className={classes["blog__sub-title"]}>
             Tap into our suite of established, validated tools that can be
             tailored to meet your needs.
           </h3>
 
-          <p className="blog__text">
+          <p className={classes["blog__text"]}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
             ullam quaerat, fugiat in ratione deleniti! Tempora doloremque
             quisquam eos ex, nesciunt temporibus dolor, fugit dolorum in ratione
             veniam?
           </p>
 
-          <div className="blog__icon-set">
-            <div className="blog__icon-wrapper">
-              <div className="blog__icon-box">
+          <div className={classes["blog__icon-set"]}>
+            <div className={classes["blog__icon-wrapper"]}>
+              <div className={classes["blog__icon-box"]}>
                 {/* eslint-disable @next/next/no-img-element */}
                 <img
                   src="assets/images/magnifying-glass_icon.png"
                   alt="magnifying glass icon"
-                  className="blog__icon"
+                  className={classes["blog__icon"]}
                 />
               </div>
 
-              <p className="blog__icon-text">
+              <p className={classes["blog__icon-text"]}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
                 ullam quaerat, fugiat in ratione deleniti! Tempora doloremque
                 quisquam eos ex, nesciunt
               </p>
             </div>
 
-            <div className="blog__icon-wrapper">
-              <div className="blog__icon-box">
+            <div className={classes["blog__icon-wrapper"]}>
+              <div className={classes["blog__icon-box"]}>
                 {/* eslint-disable @next/next/no-img-element */}
                 <img
                   src="assets/images/location-icon.png"
                   alt="location icon"
-                  className="blog__icon"
+                  className={classes["blog__icon"]}
                 />
               </div>
 
-              <p className="blog__icon-text">
+              <p className={classes["blog__icon-text"]}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
                 ullam quaerat, fugiat in ratione deleniti! Tempora doloremque
                 quisquam eos ex, nesciunt
