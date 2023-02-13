@@ -17,7 +17,9 @@ export default function Card(props: CardProps): JSX.Element {
       <h4 className={classes["card__sub-title"]}>{props.subtitle}</h4>
       <p className={classes["card__text"]}>{props.paragraph_01}</p>
       <p className={classes["card__text"]}>{props.paragraph_02}</p>
-      <Button>{props.btn_text}</Button>
+      <div className={classes["btn-wrapper"]}>
+        <Button>{props.btn_text}</Button>
+      </div>
     </div>
   );
 }
