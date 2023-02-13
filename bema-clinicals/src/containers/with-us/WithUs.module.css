@@ -111,3 +111,24 @@
   justify-content: center;
   margin-top: 7.2rem;
 }
+
+@media (max-width: 37.5em) {
+  .section_withUs {
+    padding-right: 0;
+  }
+
+  .withUs__bg-wrapper {
+    justify-content: center;
+  }
+
+  .withUs__bg-text-box {
+    width: 42rem;
+    height: 48rem;
+    padding: 8rem;
+  }
+
+  .withUs__text {
+    font-size: 1.8rem;
+    line-height: 3.9rem;
+  }
+}
