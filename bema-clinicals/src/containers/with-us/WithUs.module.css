@@ -131,4 +131,26 @@
     font-size: 1.8rem;
     line-height: 3.9rem;
   }
+
+  .withUs_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 8rem;
+  }
+
+  .withUs_info__content {
+    width: 100%;
+  }
+
+  .withUs_info__count-box {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .withUs__btn-box {
+    margin-top: 5rem;
+  }
 }
