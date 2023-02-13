@@ -10,12 +10,16 @@ export default function WithUs(): JSX.Element {
         </h2>
       </div>
 
-      <div className="withUs__bg-wrapper">
-        <div className="withUs__bg-text-box">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cum
-          incidunt fugiat nemo veritatis.
+      <div className={classes["withUs__bg-wrapper"]}>
+        <div className={classes["withUs__bg-text-box"]}>
+          <p className={classes["withUs__text"]}>
+            {" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat cum
+            incidunt fugiat nemo veritatis.
+          </p>
+
+          <Button>Our mission</Button>
         </div>
-        <Button>Our mission</Button>
       </div>
     </section>
   );

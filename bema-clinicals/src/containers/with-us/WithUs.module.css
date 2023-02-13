@@ -2,9 +2,41 @@
   width: 100%;
   height: 100%;
   background-color: var(--pure-white);
+  padding-right: 4rem;
 }
 
 .withUs__heading {
   width: 80%;
   margin: 3.8rem auto 3rem;
+}
+
+.withUs__bg-wrapper {
+  width: 100%;
+  height: 80rem;
+  background-image: url("../../../public/assets/images/cancer-institute.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.withUs__bg-text-box {
+  width: 58.3rem;
+  height: 49.4rem;
+  background: rgba(0, 102, 153, 0.5);
+  margin: 12.3rem 6.7rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 9.2rem;
+}
+
+.withUs__text {
+  font-weight: 400;
+  font-size: 2.7rem;
+  line-height: 4.9rem;
+  color: var(--pure-white);
 }
