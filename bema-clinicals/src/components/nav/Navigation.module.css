@@ -1,3 +1,11 @@
+.navigation-desktop {
+  display: block;
+}
+
+.navigation-mobile {
+  display: none;
+}
+
 .navigation-primary {
   margin: 0;
   padding: 0;
@@ -153,5 +161,37 @@
   }
   .navigation-secondary {
     width: 100%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .navigation-desktop {
+    display: none;
+  }
+
+  .navigation-mobile {
+    display: block;
+  }
+
+  .primary-navigation-mobile {
+    list-style-type: none;
+  }
+
+  .primary-navigation-mobile__item {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--pure-black);
+  }
+
+  .primary-navigation-mobile__item:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .primary-navigation-mobile__item--drop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.8rem;
   }
 }
