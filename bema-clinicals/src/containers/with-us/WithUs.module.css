@@ -40,3 +40,74 @@
   line-height: 4.9rem;
   color: var(--pure-white);
 }
+
+/*With Us Info section*/
+
+.withUs_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 9.1rem 10rem 15.3rem;
+}
+
+.withUs_info__content {
+  width: 70%;
+}
+
+.withUs_info__heading {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 4rem;
+  color: var(--pure-black);
+}
+
+.withUs_info__text {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: var(--pure-black);
+}
+
+.withUs_info__text--span {
+  font-weight: 700;
+  color: var(--pure-black);
+}
+
+.withUs_info__count-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.withUs_info__count {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.withUs_info__count--num {
+  display: block;
+  font-weight: 600;
+  font-size: 6.9rem;
+  line-height: 6.9rem;
+  color: var(--light-blue);
+}
+
+.withUs_info__count--text {
+  display: block;
+  font-weight: 400;
+  font-size: 1.9rem;
+  line-height: 4.8rem;
+  color: var(--light-gray);
+}
+
+.withUs__btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 7.2rem;
+}

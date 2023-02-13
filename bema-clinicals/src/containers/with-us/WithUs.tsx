@@ -58,8 +58,9 @@ export default function WithUs(): JSX.Element {
               </span>
             </p>
           </div>
-
-          <Button>Read more about our sub-Saharan Africa experience</Button>
+          <div className={classes["withUs__btn-box"]}>
+            <Button>Read more about our sub-Saharan Africa experience</Button>
+          </div>
         </div>
       </div>
     </section>
