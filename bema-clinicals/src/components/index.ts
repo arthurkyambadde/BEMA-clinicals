@@ -3,6 +3,7 @@ export { default as Navigation } from "./nav/Navigation";
 export { default as Banner } from "./banner/Banner";
 export { default as Hero } from "./hero/Hero";
 export { default as Button } from "./buttons/Button";
+export { default as Card } from "./card/Card";
 
 // @if $breakpoint == phone {
 //     @media (max-width: 37.5em) { @content };    //600px
