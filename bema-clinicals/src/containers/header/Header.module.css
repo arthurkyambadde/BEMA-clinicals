@@ -1,5 +1,9 @@
 /*Header styles*/
 
+.header_section {
+  overflow: hidden;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;

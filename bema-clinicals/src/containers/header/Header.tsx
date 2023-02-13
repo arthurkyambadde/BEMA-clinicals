@@ -3,7 +3,7 @@ import { Logo, Navigation, Banner, Hero } from "@/components";
 
 export default function Header(): JSX.Element {
   return (
-    <header>
+    <header className={classes["header_section"]}>
       <nav className={classes.navigation}>
         <Logo />
         <Navigation />
