@@ -14,4 +14,12 @@
     justify-content: flex-start;
     gap: 2rem;
   }
-} ;
+}
+
+@media (max-width: 37.5em) {
+  .navigation {
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 6rem;
+  }
+}

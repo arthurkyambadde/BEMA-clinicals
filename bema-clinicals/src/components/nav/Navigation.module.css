@@ -147,6 +147,14 @@
   z-index: 5;
 }
 
+.menu-bar {
+  display: none;
+}
+
+.menu-label {
+  display: none;
+}
+
 .navigation-secondary__item .dropdown-menu .dropdown-list {
   padding: 1rem 1.5rem;
 }
@@ -171,10 +179,19 @@
 
   .navigation-mobile {
     display: block;
+    position: relative;
   }
 
   .primary-navigation-mobile {
+    display: none;
+    width: 30rem;
+    height: auto;
+    padding: 3rem 5rem;
     list-style-type: none;
+    position: absolute;
+    top: 6.5rem;
+    left: -19rem;
+    background-color: var(--light-white);
   }
 
   .primary-navigation-mobile__item {
@@ -193,5 +210,18 @@
     justify-content: flex-start;
     align-items: center;
     gap: 0.8rem;
+  }
+
+  .menu-label {
+    display: initial;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--pure-black);
+    padding-right: 5rem;
+  }
+
+  .menu-bar:checked ~ .primary-navigation-mobile {
+    display: initial;
   }
 }

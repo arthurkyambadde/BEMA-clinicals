@@ -176,6 +176,29 @@ export default function Navigation(): JSX.Element {
       </div>
 
       <div className={classes["navigation-mobile"]}>
+        <input
+          type="checkbox"
+          name="menu-bar"
+          id="menu-bar"
+          className={classes["menu-bar"]}
+        />
+        <label htmlFor="menu-bar" className={classes["menu-label"]}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </label>
+
         <ul className={classes["primary-navigation-mobile"]}>
           <li className={classes["primary-navigation-mobile__item"]}>
             <svg
