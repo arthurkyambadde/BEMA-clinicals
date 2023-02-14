@@ -40,7 +40,9 @@ export default function Services(): JSX.Element {
           </span>
         </div>
 
-        <div className={classes["services__bullet"]}>
+        <div
+          className={` ${classes["services__bullet"]} ${classes["services__bullet--2"]} `}
+        >
           <span className={classes["services__bullet-text"]}>
             We are scalable
           </span>
@@ -62,7 +64,11 @@ export default function Services(): JSX.Element {
           </div>
         </div>
 
-        <ServicesCard src="assets/images/service_2.png" />
+        <div className={classes["service__card-box"]}>
+          <ServicesCard src="assets/images/service_2.png" />
+        </div>
+
+        <ServicesCard src="assets/images/service_3.png" />
 
         <div className={classes["services__bullet"]}>
           <div className={classes["services__bullet-icon-box"]}>
@@ -85,8 +91,6 @@ export default function Services(): JSX.Element {
             We are dedicated
           </span>
         </div>
-
-        <ServicesCard src="assets/images/service_3.png" />
       </div>
     </section>
   );
