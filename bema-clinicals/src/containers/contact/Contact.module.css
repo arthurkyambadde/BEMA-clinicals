@@ -9,3 +9,12 @@
 .services__header-box {
   padding: 6.5rem 20rem 1.9rem;
 }
+
+.contact__card-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 4rem 4rem;
+}
