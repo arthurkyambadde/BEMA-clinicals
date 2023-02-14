@@ -3,6 +3,7 @@ export { default as Navigation } from "./nav/Navigation";
 export { default as Banner } from "./banner/Banner";
 export { default as Hero } from "./hero/Hero";
 export { default as Button } from "./buttons/Button";
+export { ButtonText } from "./buttons/Button";
 export { default as Card } from "./card/Card";
 export { ServicesCard } from "./card/Card";
 export { ContactCard } from "./card/Card";

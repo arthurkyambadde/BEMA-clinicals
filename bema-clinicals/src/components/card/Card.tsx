@@ -1,5 +1,5 @@
 import classes from "./Card.module.css";
-import Button from "../buttons/Button";
+import Button, { ButtonText } from "../buttons/Button";
 
 interface CardProps {
   title: string;
@@ -70,6 +70,9 @@ export function ContactCard(props: contactCardProps): JSX.Element {
       <div className={classes["contact__card-details"]}>
         <h3 className={classes["contact__card-title"]}>{props.card_title}</h3>
         <p className={classes["contact__card-text"]}>{props.card_text}</p>
+        <div className="btn_wrapper">
+          <ButtonText />
+        </div>
       </div>
     </div>
   );
