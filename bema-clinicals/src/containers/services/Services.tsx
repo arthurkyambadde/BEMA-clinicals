@@ -1,4 +1,4 @@
-import { ServicesCard } from "@/components";
+import { Button, ServicesCard } from "@/components";
 import classes from "./Services.module.css";
 
 export default function Services(): JSX.Element {
@@ -64,7 +64,9 @@ export default function Services(): JSX.Element {
           </div>
         </div>
 
-        <div className={classes["service__card-box"]}>
+        <div
+          className={` ${classes["service__card-box"]} ${classes["service__card-box--2"]} `}
+        >
           <ServicesCard src="assets/images/service_2.png" />
         </div>
 
@@ -91,6 +93,10 @@ export default function Services(): JSX.Element {
             We are dedicated
           </span>
         </div>
+      </div>
+
+      <div className={classes["btn-wrapper"]}>
+        <Button>Contact us</Button>
       </div>
     </section>
   );

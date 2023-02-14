@@ -88,6 +88,13 @@
   color: var(--pure-black);
 }
 
+@media (max-width: 56.25em) {
+  .service__card {
+    width: 45rem;
+    height: 42rem;
+  }
+}
+
 @media (max-width: 37.5em) {
   .card {
     width: 100%;
