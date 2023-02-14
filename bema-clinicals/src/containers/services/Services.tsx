@@ -2,7 +2,7 @@ import classes from "./Services.module.css";
 
 export default function Services(): JSX.Element {
   return (
-    <section>
+    <section className="services_section">
       <div className={classes["services__header-box"]}>
         <span className="upper-line">&nbsp;</span>
         <h2 className="heading-secondary">
