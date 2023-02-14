@@ -18,3 +18,21 @@
   align-items: flex-start;
   padding: 0 4rem 4rem;
 }
+
+@media (max-width: 56.25em) {
+  .contact__card-wrapper {
+    flex-wrap: wrap;
+    row-gap: 4rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .contact__card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 4rem;
+  }
+}
