@@ -1,5 +1,13 @@
 import Head from "next/head";
-import { Header, WithUs, News, Blog, Services, Contact } from "@/containers";
+import {
+  Header,
+  WithUs,
+  News,
+  Blog,
+  Services,
+  Contact,
+  Footer,
+} from "@/containers";
 
 export default function Home() {
   return (
@@ -27,6 +35,7 @@ export default function Home() {
           <Services />
           <Contact />
         </main>
+        <Footer />
       </body>
     </>
   );
