@@ -85,6 +85,10 @@
     padding: 0 3rem;
   }
 
+  .service__card-box--2 {
+    margin-bottom: 4rem;
+  }
+
   .services__bullet--2 {
     justify-self: center;
     flex-direction: row-reverse;
