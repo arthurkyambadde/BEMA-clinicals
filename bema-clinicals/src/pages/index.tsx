@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Header, WithUs, News, Blog, Services } from "@/containers";
+import { Header, WithUs, News, Blog, Services, Contact } from "@/containers";
 
 export default function Home() {
   return (
@@ -25,6 +25,7 @@ export default function Home() {
           <News />
           <Blog />
           <Services />
+          <Contact />
         </main>
       </body>
     </>
