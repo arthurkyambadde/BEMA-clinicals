@@ -5,6 +5,7 @@ export { default as Hero } from "./hero/Hero";
 export { default as Button } from "./buttons/Button";
 export { default as Card } from "./card/Card";
 export { ServicesCard } from "./card/Card";
+export { ContactCard } from "./card/Card";
 
 // @if $breakpoint == phone {
 //     @media (max-width: 37.5em) { @content };    //600px

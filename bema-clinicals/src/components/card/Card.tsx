@@ -14,6 +14,12 @@ interface serviceCardProps {
   src: string;
 }
 
+interface contactCardProps {
+  card_image: string;
+  card_title: string;
+  card_text: string;
+}
+
 export default function Card(props: CardProps): JSX.Element {
   return (
     <div className={`${classes["card"]} ${classes[props.class]} `}>
@@ -45,6 +51,25 @@ export function ServicesCard(props: serviceCardProps): JSX.Element {
           quam deserunt?Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Facere iure quam deserunt?
         </p>
+      </div>
+    </div>
+  );
+}
+
+export function ContactCard(props: contactCardProps): JSX.Element {
+  return (
+    <div className={classes["contact__card"]}>
+      <div className={classes["contact__card-image"]}>
+        <img
+          src={props.card_image}
+          alt="card image"
+          className={classes["contact__card-img"]}
+        />
+      </div>
+
+      <div className={classes["contact__card-details"]}>
+        <h3 className={classes["contact__card-title"]}>{props.card_title}</h3>
+        <p className={classes["contact__card-text"]}>{props.card_text}</p>
       </div>
     </div>
   );
