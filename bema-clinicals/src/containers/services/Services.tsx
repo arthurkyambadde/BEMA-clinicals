@@ -1,8 +1,9 @@
+import { ServicesCard } from "@/components";
 import classes from "./Services.module.css";
 
 export default function Services(): JSX.Element {
   return (
-    <section className="services_section">
+    <section className={classes["services_section"]}>
       <div className={classes["services__header-box"]}>
         <span className="upper-line">&nbsp;</span>
         <h2 className="heading-secondary">
@@ -13,6 +14,10 @@ export default function Services(): JSX.Element {
           quaerat, fugiat in ratione deleniti! Tempora doloremque quisquam eos
           ex, nesciunt temporibus{" "}
         </p>
+      </div>
+
+      <div className={classes["services__details"]}>
+        <ServicesCard src="assets/images/service_1.png" />
       </div>
     </section>
   );
