@@ -8,7 +8,7 @@ export default function Footer(): JSX.Element {
 
       <div className={classes["footer__links"]}>
         <ul className={classes["secondary_nav-main"]}>
-          <li className={classes["secondary_nav-item foot_link"]}>About</li>
+          <li className={classes["foot_link"]}>About</li>
           <li className={classes["secondary_nav-item"]}>About</li>
           <li className={classes["secondary_nav-item"]}>Privacy</li>
           <li className={classes["secondary_nav-item"]}>Privacy shield</li>
@@ -25,9 +25,7 @@ export default function Footer(): JSX.Element {
         </div>
 
         <ul className={classes["secondary_nav-icon"]}>
-          <li className={classes["secondary_sub-item foot_link"]}>
-            get in touch
-          </li>
+          <li className={classes["foot_link"]}>get in touch</li>
           <li className={classes["secondary_sub-item"]}>
             {" "}
             <svg
@@ -69,7 +67,9 @@ export default function Footer(): JSX.Element {
               bema@gmail.com
             </span>
           </li>
-          <li className={classes["secondary_sub-item"]}>
+          <li
+            className={` ${classes["secondary_sub-item"]} ${classes["icon-item-box"]} `}
+          >
             <div className={classes["icon-box"]}>
               <svg
                 width="14"
@@ -98,29 +98,30 @@ export default function Footer(): JSX.Element {
                   fill="white"
                 />
               </svg>
-              <li className={classes["secondary_sub-item"]}>
-                <input
-                  type="search"
-                  className={classes["footer__input"]}
-                  name="footer-search"
-                  id="foot-search"
-                  placeholder="Search..."
-                />
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14.8137 13.2754L11.884 10.3457C11.7375 10.2285 11.5617 10.1406 11.386 10.1406H10.9172C11.7082 9.11523 12.2063 7.82617 12.2063 6.39062C12.2063 3.05078 9.45236 0.296875 6.11252 0.296875C2.74338 0.296875 0.0187683 3.05078 0.0187683 6.39062C0.0187683 9.75977 2.74338 12.4844 6.11252 12.4844C7.51877 12.4844 8.80783 12.0156 9.86252 11.1953V11.6934C9.86252 11.8691 9.92111 12.0449 10.0676 12.1914L12.968 15.0918C13.261 15.3848 13.7004 15.3848 13.9641 15.0918L14.7844 14.2715C15.0774 14.0078 15.0774 13.5684 14.8137 13.2754ZM6.11252 10.1406C4.03244 10.1406 2.36252 8.4707 2.36252 6.39062C2.36252 4.33984 4.03244 2.64062 6.11252 2.64062C8.1633 2.64062 9.86252 4.33984 9.86252 6.39062C9.86252 8.4707 8.1633 10.1406 6.11252 10.1406Z"
-                    fill="white"
-                    fill-opacity="0.6"
-                  />
-                </svg>
-              </li>
             </div>
+          </li>
+          <li className={classes["secondary_sub-input"]}>
+            <input
+              type="search"
+              className={classes["footer__input"]}
+              name="footer-search"
+              id="foot-search"
+              placeholder="Search..."
+            />
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className={classes["footer_icon"]}
+            >
+              <path
+                d="M14.8137 13.2754L11.884 10.3457C11.7375 10.2285 11.5617 10.1406 11.386 10.1406H10.9172C11.7082 9.11523 12.2063 7.82617 12.2063 6.39062C12.2063 3.05078 9.45236 0.296875 6.11252 0.296875C2.74338 0.296875 0.0187683 3.05078 0.0187683 6.39062C0.0187683 9.75977 2.74338 12.4844 6.11252 12.4844C7.51877 12.4844 8.80783 12.0156 9.86252 11.1953V11.6934C9.86252 11.8691 9.92111 12.0449 10.0676 12.1914L12.968 15.0918C13.261 15.3848 13.7004 15.3848 13.9641 15.0918L14.7844 14.2715C15.0774 14.0078 15.0774 13.5684 14.8137 13.2754ZM6.11252 10.1406C4.03244 10.1406 2.36252 8.4707 2.36252 6.39062C2.36252 4.33984 4.03244 2.64062 6.11252 2.64062C8.1633 2.64062 9.86252 4.33984 9.86252 6.39062C9.86252 8.4707 8.1633 10.1406 6.11252 10.1406Z"
+                fill="white"
+                fill-opacity="0.6"
+              />
+            </svg>
           </li>
         </ul>
       </div>
