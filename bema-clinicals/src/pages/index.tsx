@@ -26,17 +26,15 @@ export default function Home() {
         <link rel="icon" type="image/svg" href="/assets/images/favicon.svg" />
         <title>BEMA - clinicals</title>
       </Head>
-      <body>
-        <Header />
-        <main>
-          <WithUs />
-          <News />
-          <Blog />
-          <Services />
-          <Contact />
-        </main>
-        <Footer />
-      </body>
+      <Header />
+      <main>
+        <WithUs />
+        <News />
+        <Blog />
+        <Services />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }
