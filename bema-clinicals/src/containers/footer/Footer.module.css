@@ -121,3 +121,40 @@
   line-height: 1.9rem;
   color: rgba(255, 255, 255, 0.6);
 }
+
+@media (max-width: 75em) {
+  .section_footer {
+    gap: 9rem;
+    overflow: hidden;
+  }
+
+  .logo__container {
+    width: 40%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .section_footer {
+    gap: 1rem;
+    padding: 5rem 5rem;
+  }
+
+  .footer__input {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .section_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 5rem 2rem 5rem 4rem;
+  }
+
+  .footer__input {
+    width: 15rem;
+  }
+}

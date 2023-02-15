@@ -4,7 +4,9 @@ import classes from "./Footer.module.css";
 export default function Footer(): JSX.Element {
   return (
     <footer className={classes["section_footer"]}>
-      <Logo />
+      <div className={classes["logo__container"]}>
+        <Logo />
+      </div>
 
       <div className={classes["footer__links"]}>
         <ul className={classes["secondary_nav-main"]}>
