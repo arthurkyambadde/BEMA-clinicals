@@ -56,6 +56,12 @@ html {
   }
 }
 
+@media (max-width: 23.45em) {
+  html {
+    font-size: 31.25%; /*1rem = 5px/16px = 31.25% */
+  }
+}
+
 @media (min-width: 112.5em) {
   html {
     font-size: 75%; /* 1rem = 12px/16px = 75% */
