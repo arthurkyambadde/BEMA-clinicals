@@ -4,4 +4,13 @@
   padding: 7.3rem 21.3rem 10rem;
   background-color: var(--pure-black);
   color: var(--pure-white);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__links {
+  display: flex;
 }

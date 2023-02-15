@@ -6,27 +6,29 @@ export default function Footer(): JSX.Element {
     <footer className={classes["section_footer"]}>
       <Logo />
 
-      <div className="footer__links">
-        <ul className="secondary_nav-main">
-          <li className="secondary_nav-item foot_link">About</li>
-          <li className="secondary_nav-item">About</li>
-          <li className="secondary_nav-item">Privacy</li>
-          <li className="secondary_nav-item">Privacy shield</li>
-          <li className="secondary_nav-item">Terms of Use</li>
-          <li className="secondary_nav-item">Cookie notice</li>
+      <div className={classes["footer__links"]}>
+        <ul className={classes["secondary_nav-main"]}>
+          <li className={classes["secondary_nav-item foot_link"]}>About</li>
+          <li className={classes["secondary_nav-item"]}>About</li>
+          <li className={classes["secondary_nav-item"]}>Privacy</li>
+          <li className={classes["secondary_nav-item"]}>Privacy shield</li>
+          <li className={classes["secondary_nav-item"]}>Terms of Use</li>
+          <li className={classes["secondary_nav-item"]}>Cookie notice</li>
         </ul>
 
-        <div className="footer__text-box">
-          <h3 className="footer__title">headquarters</h3>
-          <p className="footer__text">
+        <div className={classes["footer__text-box"]}>
+          <h3 className={classes["footer__title"]}>headquarters</h3>
+          <p className={classes["footer__text"]}>
             BIOEQUIVALENCE & MEDICINES ANALYSIS CENTER UGANDA Headquarters
             P.O.BOX 10442 Kampala, Uganda
           </p>
         </div>
 
-        <ul className="secondary_nav-icon">
-          <li className="secondary_sub-item foot_link">get in touch</li>
-          <li className="secondary_sub-item">
+        <ul className={classes["secondary_nav-icon"]}>
+          <li className={classes["secondary_sub-item foot_link"]}>
+            get in touch
+          </li>
+          <li className={classes["secondary_sub-item"]}>
             {" "}
             <svg
               width="16"
@@ -46,7 +48,7 @@ export default function Footer(): JSX.Element {
               +256200901030
             </span>
           </li>
-          <li className="secondary_sub-item">
+          <li className={classes["secondary_sub-item"]}>
             {" "}
             <svg
               width="15"
@@ -67,8 +69,8 @@ export default function Footer(): JSX.Element {
               bema@gmail.com
             </span>
           </li>
-          <li className="secondary_sub-item">
-            <div className="icon-box">
+          <li className={classes["secondary_sub-item"]}>
+            <div className={classes["icon-box"]}>
               <svg
                 width="14"
                 height="14"
@@ -83,7 +85,7 @@ export default function Footer(): JSX.Element {
               </svg>
             </div>
 
-            <div className="icon-box">
+            <div className={classes["icon-box"]}>
               <svg
                 width="16"
                 height="13"
@@ -96,10 +98,10 @@ export default function Footer(): JSX.Element {
                   fill="white"
                 />
               </svg>
-              <li className="secondary_sub-item">
+              <li className={classes["secondary_sub-item"]}>
                 <input
                   type="search"
-                  className="footer__input"
+                  className={classes["footer__input"]}
                   name="footer-search"
                   id="foot-search"
                   placeholder="Search..."
