@@ -1,0 +1,7 @@
+.section_footer {
+  width: 100%;
+  height: 100%;
+  padding: 7.3rem 21.3rem 10rem;
+  background-color: var(--pure-black);
+  color: var(--pure-white);
+}
