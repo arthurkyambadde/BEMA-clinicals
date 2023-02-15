@@ -12,7 +12,6 @@ export default function Button(props: ButtonProps): JSX.Element {
         width="9"
         height="14"
         viewBox="0 0 9 14"
-        fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
@@ -30,7 +29,6 @@ export function ButtonText(): JSX.Element {
       <span className={classes["btn-span"]}>Read more </span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        fill="none"
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
