@@ -1,8 +1,8 @@
 /*Card styles*/
 
 .card {
-  width: 70rem;
-  height: 75rem;
+  width: 46rem;
+  height: 47rem;
   text-align: center;
   padding: 5rem;
 }
@@ -11,25 +11,20 @@
 
 .card__title {
   font-weight: 700;
-  font-size: 3.6rem;
+  font-size: 1.8rem;
   line-height: 5.4rem;
   color: var(--pure-white);
-
-  margin-bottom: 2rem;
 }
 
 .card__sub-title {
   font-weight: 700;
-  font-size: 2.2rem;
-  line-height: 4rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
   color: var(--pure-white);
-
-  margin-bottom: 3.9rem;
 }
 
 .card__text {
   font-weight: 400;
-  font-size: 1.8rem;
   line-height: 3.2rem;
   color: var(--pure-white);
 }
@@ -41,11 +36,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .card__text:not(:last-child) {
-  margin-bottom: 1.9rem;
+  margin-bottom: 0.5rem;
 }
 
 .news__card {
