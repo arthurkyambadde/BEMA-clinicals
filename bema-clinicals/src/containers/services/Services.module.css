@@ -48,6 +48,7 @@
 .services__bullet-icon {
   width: 2rem;
   height: 2rem;
+  fill: var(--pure-white);
 }
 
 .services__bullet-text {

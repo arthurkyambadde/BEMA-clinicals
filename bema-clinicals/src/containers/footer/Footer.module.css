@@ -107,6 +107,14 @@
   left: 1rem;
 }
 
+.foot-icon {
+  fill: var(--light-blue);
+}
+
+.foot_icon {
+  fill: var(--pure-white);
+}
+
 .footer__input {
   width: 29.2rem;
   height: 4.2rem;
