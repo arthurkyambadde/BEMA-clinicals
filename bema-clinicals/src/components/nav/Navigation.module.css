@@ -170,10 +170,12 @@
   }
 
   .navigation-primary--sub {
-    width: 50%;
+    width: 54%;
+    padding: 0;
   }
   .navigation-secondary {
     width: 100%;
+    gap: 2rem;
   }
 }
 
