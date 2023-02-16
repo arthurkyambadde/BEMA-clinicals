@@ -23,7 +23,7 @@ export default function Home() {
         />
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta name="author" content="Dennis Ssembatya" />
-        <link rel="icon" type="image/svg" href="/assets/images/favicon.svg" />
+        <link rel="icon" type="image/svg" href="/assets/images/logo.png" />
         <title>BEMA - clinicals</title>
       </Head>
       <Header />
