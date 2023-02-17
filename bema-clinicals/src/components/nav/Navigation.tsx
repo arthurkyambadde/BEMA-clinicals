@@ -1,3 +1,4 @@
+import Anchor from "../anchor/Anchor";
 import classes from "./Navigation.module.css";
 
 export default function Navigation(): JSX.Element {
@@ -5,38 +6,36 @@ export default function Navigation(): JSX.Element {
     <>
       <div className={classes["navigation-desktop"]}>
         <ul className={classes["navigation-primary"]}>
-          <li className={classes["navigation-primary__item"]}>
-            <svg
-              width="16"
-              height="15"
-              viewBox="0 0 16 15"
-              xmlns="http://www.w3.org/2000/svg"
-              className={classes["nav-icon"]}
-            >
-              <path d="M14.493 1.43359L11.6492 0.777344C11.3484 0.695312 11.0203 0.859375 10.8836 1.16016L9.57109 4.22266C9.46172 4.49609 9.54375 4.79688 9.7625 4.98828L11.4305 6.35547C10.4461 8.43359 8.72344 10.1836 6.59062 11.1953L5.22344 9.52734C5.03203 9.30859 4.73125 9.22656 4.45781 9.33594L1.39531 10.6484C1.09453 10.7852 0.957812 11.1133 1.0125 11.4141L1.66875 14.2578C1.75078 14.5586 1.99687 14.75 2.325 14.75C9.325 14.75 15.0125 9.08984 15.0125 2.0625C15.0125 1.76172 14.7937 1.51562 14.493 1.43359Z" />
-            </svg>
-            <span
-              className={` ${classes["nav-span"]} ${classes["nav-span_phone"]} `}
-            >
-              +256200901030
-            </span>
-          </li>
-          <li className={classes["navigation-primary__item"]}>
-            <svg
-              width="15"
-              height="11"
-              viewBox="0 0 15 11"
-              className={classes["icon-email"]}
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M13.6375 0.5H2.2625C1.52422 0.5 0.95 1.10156 0.95 1.8125V9.6875C0.95 10.4258 1.52422 11 2.2625 11H13.6375C14.3484 11 14.95 10.4258 14.95 9.6875V1.8125C14.95 1.10156 14.3484 0.5 13.6375 0.5ZM13.6375 1.8125V2.93359C13.0086 3.45312 12.0242 4.21875 9.94609 5.85938C9.48125 6.21484 8.57891 7.08984 7.95 7.0625C7.29375 7.08984 6.39141 6.21484 5.92656 5.85938C3.84844 4.21875 2.86406 3.45312 2.2625 2.93359V1.8125H13.6375ZM2.2625 9.6875V4.62891C2.86406 5.12109 3.76641 5.83203 5.10625 6.89844C5.70781 7.36328 6.77422 8.40234 7.95 8.375C9.09844 8.40234 10.1375 7.36328 10.7664 6.89844C12.1062 5.83203 13.0086 5.12109 13.6375 4.62891V9.6875H2.2625Z" />
-            </svg>
-            <span
-              className={` ${classes["nav-span"]} ${classes["nav-span_email"]} `}
-            >
-              bema@gmail.com
-            </span>
-          </li>
+          <Anchor
+            containerClass={classes["navigation-primary__item"]}
+            text="+256200901030"
+            textClass={` ${classes["nav-span"]} ${classes["nav-span_phone"]} `}
+            href="#"
+            hasIcon
+            iconPath="M14.493 1.43359L11.6492 0.777344C11.3484 0.695312 11.0203 0.859375 10.8836 1.16016L9.57109 4.22266C9.46172 4.49609 9.54375 4.79688 9.7625 4.98828L11.4305 6.35547C10.4461 8.43359 8.72344 10.1836 6.59062 11.1953L5.22344 9.52734C5.03203 9.30859 4.73125 9.22656 4.45781 9.33594L1.39531 10.6484C1.09453 10.7852 0.957812 11.1133 1.0125 11.4141L1.66875 14.2578C1.75078 14.5586 1.99687 14.75 2.325 14.75C9.325 14.75 15.0125 9.08984 15.0125 2.0625C15.0125 1.76172 14.7937 1.51562 14.493 1.43359Z"
+            iconProps={{
+              width: "16",
+              height: "15",
+              viewBox: "0 0 16 15",
+              xmlns: "http://www.w3.org/2000/svg",
+              className: classes["nav-icon"],
+            }}
+          />
+          <Anchor
+            containerClass={classes["navigation-primary__item"]}
+            text="bema@gmail.com"
+            textClass={` ${classes["nav-span"]} ${classes["nav-span_email"]} `}
+            href="#"
+            hasIcon
+            iconPath="M13.6375 0.5H2.2625C1.52422 0.5 0.95 1.10156 0.95 1.8125V9.6875C0.95 10.4258 1.52422 11 2.2625 11H13.6375C14.3484 11 14.95 10.4258 14.95 9.6875V1.8125C14.95 1.10156 14.3484 0.5 13.6375 0.5ZM13.6375 1.8125V2.93359C13.0086 3.45312 12.0242 4.21875 9.94609 5.85938C9.48125 6.21484 8.57891 7.08984 7.95 7.0625C7.29375 7.08984 6.39141 6.21484 5.92656 5.85938C3.84844 4.21875 2.86406 3.45312 2.2625 2.93359V1.8125H13.6375ZM2.2625 9.6875V4.62891C2.86406 5.12109 3.76641 5.83203 5.10625 6.89844C5.70781 7.36328 6.77422 8.40234 7.95 8.375C9.09844 8.40234 10.1375 7.36328 10.7664 6.89844C12.1062 5.83203 13.0086 5.12109 13.6375 4.62891V9.6875H2.2625Z"
+            iconProps={{
+              width: "15",
+              height: "11",
+              viewBox: "0 0 15 11",
+              xmlns: "http://www.w3.org/2000/svg",
+              className: classes["icon-email"],
+            }}
+          />
 
           <ul className={classes["navigation-primary--sub"]}>
             <li className={classes["navigation-primary--sub__item"]}>
@@ -51,30 +50,67 @@ export default function Navigation(): JSX.Element {
               </svg>
               <div className={classes["dropdown-menu"]}>
                 <ul className={classes["dropdown-list"]}>
-                  <li className={classes["dropdown-list_item"]}>Our rates</li>
-                  <li className={classes["dropdown-list_item"]}>Our charges</li>
-                  <li className={classes["dropdown-list_item"]}>Our prices</li>
-                  <li className={classes["dropdown-list_item"]}>Our terms</li>
+                  <Anchor
+                    containerClass={classes["dropdown-list_item"]}
+                    text="Our rates"
+                    textClass=""
+                    href="#"
+                  />
+                  <Anchor
+                    containerClass={classes["dropdown-list_item"]}
+                    text="Our charges"
+                    textClass=""
+                    href="#"
+                  />
+                  <Anchor
+                    containerClass={classes["dropdown-list_item"]}
+                    text="Our prices"
+                    textClass=""
+                    href="#"
+                  />
+                  <Anchor
+                    containerClass={classes["dropdown-list_item"]}
+                    text="Our terms"
+                    textClass=""
+                    href="#"
+                  />
                 </ul>
               </div>
             </li>
-            <li className={classes["navigation-primary--sub__item"]}>
-              News and Events
-            </li>
-            <li className={classes["navigation-primary--sub__item"]}>Blog</li>
-            <li className={classes["navigation-primary--sub__item"]}>
-              Contact Us
-            </li>
+            <Anchor
+              containerClass={classes["navigation-primary--sub__item"]}
+              text="News and Events"
+              textClass=""
+              href="#"
+            />
+            <Anchor
+              containerClass={classes["navigation-primary--sub__item"]}
+              text="Blog"
+              textClass=""
+              href="#"
+            />
+            <Anchor
+              containerClass={classes["navigation-primary--sub__item"]}
+              text="Contact Us"
+              textClass=""
+              href="#"
+            />
           </ul>
         </ul>
 
         <ul className={classes["navigation-secondary"]}>
-          <li className={classes["navigation-secondary__item"]}>
-            Our Experience
-          </li>
-          <li className={classes["navigation-secondary__item"]}>
-            BEMA clinical trials
-          </li>
+          <Anchor
+            containerClass={classes["navigation-secondary__item"]}
+            text="Our Experience"
+            textClass=""
+            href="#"
+          />
+          <Anchor
+            containerClass={classes["navigation-secondary__item"]}
+            text="BEMA clinical trials"
+            textClass=""
+            href="#"
+          />
           <li className={classes["navigation-secondary__item"]}>
             Services
             <svg
@@ -87,16 +123,39 @@ export default function Navigation(): JSX.Element {
             </svg>
             <div className={classes["dropdown-menu"]}>
               <ul className={classes["dropdown-list"]}>
-                <li className={classes["dropdown-list_item"]}>Our rates</li>
-                <li className={classes["dropdown-list_item"]}>Our charges</li>
-                <li className={classes["dropdown-list_item"]}>Our prices</li>
-                <li className={classes["dropdown-list_item"]}>Our terms</li>
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our rates"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our charges"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our prices"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our terms"
+                  textClass=""
+                  href="#"
+                />
               </ul>
             </div>
           </li>
-          <li className={classes["navigation-secondary__item"]}>
-            Focus On Sites
-          </li>
+          <Anchor
+            containerClass={classes["navigation-secondary__item"]}
+            text="Focus On Sites"
+            textClass=""
+            href="#"
+          />
           <li className={classes["navigation-secondary__item"]}>
             Insights Hub
             <svg
@@ -109,10 +168,30 @@ export default function Navigation(): JSX.Element {
             </svg>
             <div className={classes["dropdown-menu"]}>
               <ul className={classes["dropdown-list"]}>
-                <li className={classes["dropdown-list_item"]}>Our rates</li>
-                <li className={classes["dropdown-list_item"]}>Our charges</li>
-                <li className={classes["dropdown-list_item"]}>Our prices</li>
-                <li className={classes["dropdown-list_item"]}>Our terms</li>
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our rates"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our charges"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our prices"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our terms"
+                  textClass=""
+                  href="#"
+                />
               </ul>
             </div>
           </li>
@@ -128,10 +207,30 @@ export default function Navigation(): JSX.Element {
             </svg>
             <div className={classes["dropdown-menu"]}>
               <ul className={classes["dropdown-list"]}>
-                <li className={classes["dropdown-list_item"]}>Our rates</li>
-                <li className={classes["dropdown-list_item"]}>Our charges</li>
-                <li className={classes["dropdown-list_item"]}>Our prices</li>
-                <li className={classes["dropdown-list_item"]}>Our terms</li>
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our rates"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our charges"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our prices"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our terms"
+                  textClass=""
+                  href="#"
+                />
               </ul>
             </div>
           </li>
@@ -218,10 +317,30 @@ export default function Navigation(): JSX.Element {
             </svg>
             <div className={classes["dropdown-menu"]}>
               <ul className={classes["dropdown-list"]}>
-                <li className={classes["dropdown-list_item"]}>Our rates</li>
-                <li className={classes["dropdown-list_item"]}>Our charges</li>
-                <li className={classes["dropdown-list_item"]}>Our prices</li>
-                <li className={classes["dropdown-list_item"]}>Our terms</li>
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our rates"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our charges"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our prices"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our terms"
+                  textClass=""
+                  href="#"
+                />
               </ul>
             </div>
           </li>
@@ -253,10 +372,30 @@ export default function Navigation(): JSX.Element {
             </svg>
             <div className={classes["dropdown-menu"]}>
               <ul className={classes["dropdown-list"]}>
-                <li className={classes["dropdown-list_item"]}>Our rates</li>
-                <li className={classes["dropdown-list_item"]}>Our charges</li>
-                <li className={classes["dropdown-list_item"]}>Our prices</li>
-                <li className={classes["dropdown-list_item"]}>Our terms</li>
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our rates"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our charges"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our prices"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our terms"
+                  textClass=""
+                  href="#"
+                />
               </ul>
             </div>
           </li>
@@ -277,10 +416,30 @@ export default function Navigation(): JSX.Element {
             </svg>
             <div className={classes["dropdown-menu"]}>
               <ul className={classes["dropdown-list"]}>
-                <li className={classes["dropdown-list_item"]}>Our rates</li>
-                <li className={classes["dropdown-list_item"]}>Our charges</li>
-                <li className={classes["dropdown-list_item"]}>Our prices</li>
-                <li className={classes["dropdown-list_item"]}>Our terms</li>
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our rates"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our charges"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our prices"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our terms"
+                  textClass=""
+                  href="#"
+                />
               </ul>
             </div>
           </li>
@@ -298,10 +457,30 @@ export default function Navigation(): JSX.Element {
             </svg>
             <div className={classes["dropdown-menu"]}>
               <ul className={classes["dropdown-list"]}>
-                <li className={classes["dropdown-list_item"]}>Our rates</li>
-                <li className={classes["dropdown-list_item"]}>Our charges</li>
-                <li className={classes["dropdown-list_item"]}>Our prices</li>
-                <li className={classes["dropdown-list_item"]}>Our terms</li>
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our rates"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our charges"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our prices"
+                  textClass=""
+                  href="#"
+                />
+                <Anchor
+                  containerClass={classes["dropdown-list_item"]}
+                  text="Our terms"
+                  textClass=""
+                  href="#"
+                />
               </ul>
             </div>
           </li>
