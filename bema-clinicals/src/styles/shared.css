@@ -44,6 +44,15 @@ html {
   font-size: 62.5%;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 @media (max-width: 75em) {
   html {
     font-size: 56.25%; /*1rem = 9px/16px = 56.25% */

@@ -1,4 +1,5 @@
 import { Logo } from "@/components";
+import Anchor from "@/components/anchor/Anchor";
 import classes from "./Footer.module.css";
 
 export default function Footer(): JSX.Element {
@@ -10,12 +11,42 @@ export default function Footer(): JSX.Element {
 
       <div className={classes["footer__links"]}>
         <ul className={classes["secondary_nav-main"]}>
-          <li className={classes["foot_link"]}>About</li>
-          <li className={classes["secondary_nav-item"]}>About</li>
-          <li className={classes["secondary_nav-item"]}>Privacy</li>
-          <li className={classes["secondary_nav-item"]}>Privacy shield</li>
-          <li className={classes["secondary_nav-item"]}>Terms of Use</li>
-          <li className={classes["secondary_nav-item"]}>Cookie notice</li>
+          <Anchor
+            containerClass={classes["foot_link"]}
+            text="About"
+            textClass=""
+            href="#"
+          />
+          <Anchor
+            containerClass={classes["secondary_nav-item"]}
+            text="About"
+            textClass=""
+            href="#"
+          />
+          <Anchor
+            containerClass={classes["secondary_nav-item"]}
+            text="Privacy"
+            textClass=""
+            href="#"
+          />
+          <Anchor
+            containerClass={classes["secondary_nav-item"]}
+            text="Privacy shield"
+            textClass=""
+            href="#"
+          />
+          <Anchor
+            containerClass={classes["secondary_nav-item"]}
+            text="Terms of Use"
+            textClass=""
+            href="#"
+          />
+          <Anchor
+            containerClass={classes["secondary_nav-item"]}
+            text="Cookie notice"
+            textClass=""
+            href="#"
+          />
         </ul>
 
         <div className={classes["footer__text-box"]}>

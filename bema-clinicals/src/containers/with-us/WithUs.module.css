@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   background-color: var(--pure-white);
-  padding-right: 4rem;
+  /* padding-right: 4rem; */
 }
 
 .withUs__heading {
@@ -12,26 +12,26 @@
 
 .withUs__bg-wrapper {
   width: 100%;
-  height: 80rem;
+  height: 100vh;
   background-image: url("../../../public/assets/images/cancer-institute.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  padding: 0rem 5rem;
 }
 
 .withUs__bg-text-box {
   width: 40%;
   height: 60%;
   background: rgba(0, 102, 153, 0.5);
-  margin: 12.3rem 6.7rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 8rem;
+  padding: 0rem 8rem;
 }
 
 .withUs__text {
@@ -44,15 +44,23 @@
 /*With Us Info section*/
 
 .withUs_info {
+  min-height: 100vh;
+  padding: 5rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem 9.1rem 10rem 15.3rem;
+  /* padding: 2rem 9.1rem 10rem 15.3rem; */
 }
 
 .withUs_info__content {
   width: 70%;
+}
+
+.withUs_logo--container {
+  display: flex;
+  justify-content: center;
+  width: 30%;
 }
 
 .withUs_info__heading {
@@ -67,6 +75,7 @@
   font-size: 1.8rem;
   line-height: 3.2rem;
   color: var(--pure-black);
+  margin-top: 3rem;
 }
 
 .withUs_info__text--span {
@@ -87,7 +96,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .withUs_info__count--num {
@@ -109,8 +118,7 @@
 .withUs__btn-box {
   width: 100%;
   display: flex;
-  justify-content: center;
-  margin-top: 7.2rem;
+  margin-top: 8rem;
 }
 
 .btn-wrapper {
@@ -120,7 +128,7 @@
 @media (max-width: 56.25em) {
   .withUs__bg-text-box {
     width: 50%;
-    height: auto;
+    /* height: auto; */
   }
 }
 
@@ -135,7 +143,7 @@
 
   .withUs__bg-text-box {
     width: 80%;
-    height: auto;
+    /* height: auto; */
   }
 
   .withUs__text {

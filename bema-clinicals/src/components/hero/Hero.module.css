@@ -1,4 +1,6 @@
 .hero-wrapper {
+  display: block;
+  box-sizing: border-box;
   background-image: linear-gradient(
       rgba(0, 102, 153, 0.3),
       rgba(0, 102, 153, 0.3)
@@ -7,16 +9,20 @@
   background-repeat: no-repeat;
   background-position: right;
   width: 100%;
+  height: calc(100vh - 20rem);
+}
+
+.hero__main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
   height: 100%;
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding: 2rem 5rem;
 }
 
 .hero__text-box {
-  width: 75%;
-  height: 30%;
-  margin: 0 4.9rem;
-
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -39,13 +45,19 @@
 }
 
 .hero__btn-wrapper {
-  margin: 3.2rem 4.9rem;
+  margin: 3.2rem 0rem;
 }
 
 @media (max-width: 37.5em) {
+  .hero-wrapper {
+    height: calc(100vh - 13.6rem);
+  }
+  .hero__main-content {
+    width: 100%;
+  }
   .hero__text-box {
     height: auto;
-    margin: 0 2.4rem;
+    /* margin: 0 2.4rem; */
 
     display: flex;
     flex-direction: column;

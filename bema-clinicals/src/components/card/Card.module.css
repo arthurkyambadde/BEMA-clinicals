@@ -108,6 +108,8 @@
   height: 50%;
   width: 100%;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact__card-title {
@@ -126,6 +128,10 @@
   color: #777777;
 
   margin-bottom: 2.3rem;
+}
+
+.btn_wrapper {
+  margin-top: auto;
 }
 
 @media (max-width: 56.25em) {

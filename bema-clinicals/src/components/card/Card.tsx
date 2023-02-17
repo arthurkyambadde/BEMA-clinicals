@@ -70,7 +70,7 @@ export function ContactCard(props: contactCardProps): JSX.Element {
       <div className={classes["contact__card-details"]}>
         <h3 className={classes["contact__card-title"]}>{props.card_title}</h3>
         <p className={classes["contact__card-text"]}>{props.card_text}</p>
-        <div className="btn_wrapper">
+        <div className={classes["btn_wrapper"]}>
           <ButtonText />
         </div>
       </div>
