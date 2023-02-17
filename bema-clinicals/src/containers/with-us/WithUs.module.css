@@ -44,15 +44,23 @@
 /*With Us Info section*/
 
 .withUs_info {
+  min-height: 100vh;
+  padding: 5rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem 9.1rem 10rem 15.3rem;
+  /* padding: 2rem 9.1rem 10rem 15.3rem; */
 }
 
 .withUs_info__content {
   width: 70%;
+}
+
+.withUs_logo--container {
+  display: flex;
+  justify-content: center;
+  width: 30%;
 }
 
 .withUs_info__heading {
@@ -87,7 +95,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 .withUs_info__count--num {
@@ -109,8 +117,7 @@
 .withUs__btn-box {
   width: 100%;
   display: flex;
-  justify-content: center;
-  margin-top: 7.2rem;
+  margin-top: 6rem;
 }
 
 .btn-wrapper {

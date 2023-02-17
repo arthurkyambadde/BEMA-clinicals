@@ -23,7 +23,9 @@ export default function WithUs(): JSX.Element {
       </div>
 
       <div className={classes["withUs_info"]}>
-        <Logo />
+        <div className={classes["withUs_logo--container"]}>
+          <Logo />
+        </div>
 
         <div className={classes["withUs_info__content"]}>
           <h3 className={classes["withUs_info__heading"]}>
