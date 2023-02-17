@@ -49,9 +49,15 @@
 }
 
 @media (max-width: 37.5em) {
+  .hero-wrapper {
+    height: calc(100vh - 13.6rem);
+  }
+  .hero__main-content {
+    width: 100%;
+  }
   .hero__text-box {
     height: auto;
-    margin: 0 2.4rem;
+    /* margin: 0 2.4rem; */
 
     display: flex;
     flex-direction: column;
