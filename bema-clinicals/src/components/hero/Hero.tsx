@@ -4,19 +4,21 @@ import { Button } from "@/components";
 export default function Hero(): JSX.Element {
   return (
     <div className={classes["hero-wrapper"]}>
-      <div className={classes["hero__text-box"]}>
-        <h1 className={classes["heading-primary"]}>
-          BIOEQUIVALENCE & MEDICINES ANALYSIS CENTER UGANDA (BEMA-UG)
-        </h1>
-        <p className={classes["hero__text"]}>
-          {" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam
-          quaerat, fugiat in ratione deleniti! Tempora doloremque quisquam eos
-          ex, nesciunt{" "}
-        </p>
-      </div>
-      <div className={classes["hero__btn-wrapper"]}>
-        <Button>Contact Us</Button>
+      <div className={classes["hero__main-content"]}>
+        <div className={classes["hero__text-box"]}>
+          <h1 className={classes["heading-primary"]}>
+            BIOEQUIVALENCE & MEDICINES ANALYSIS CENTER UGANDA (BEMA-UG)
+          </h1>
+          <p className={classes["hero__text"]}>
+            {" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            ullam quaerat, fugiat in ratione deleniti! Tempora doloremque
+            quisquam eos ex, nesciunt{" "}
+          </p>
+        </div>
+        <div className={classes["hero__btn-wrapper"]}>
+          <Button>Contact Us</Button>
+        </div>
       </div>
     </div>
   );
